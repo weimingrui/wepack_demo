@@ -1,0 +1,485 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><title>
+    万科集团
+</title><meta name="keywords" content="万科,万科物业,www.vanke.com" /><meta name="description" content="万科，全球最大的专业住宅开发商。万科企业股份有限公司成立于1984年，1988年进入房地产行业，经过三十余年的发展，成为国内领先的房地产公司，目前主营业务包括房地产开发和物业服务。公司聚焦城市圈带的发展战略，截至2014年底，公司进入中国大陆65个城市，分布在以珠三角为核心的广深区域、以长三角为核心的上海区域、以环渤海为核心的北京区域，以及由中西部中心城市组成的成都区域。" /><meta name="author" content="万科官网全程设计维护服务商:锐诺互动(深圳)  WWW.REENOO.COM" /><meta name="copyright" content="万科官网(万科企业股份有限公司）." /><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><link rel="shortcut icon" href="img/favicon.ico" /><link rel="stylesheet" href="css/public.css" />
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="js/public.js"></script>
+    <script src="js/uaredirect.js"></script>
+    <!--<script src="http://int.dpool.sina.com.cn/iplookup/iplookup.php?format=js" type="text/ecmascript"></script>-->
+    <!--[if IE 8]>
+    <meta http-equiv="X-UA-Compatible" content="IE=8" />
+    <![endif]-->
+    <script type="text/javascript">
+        $(function () {
+            document.getElementById('searchbox').onkeydown = function (event) {
+                var e = event || window.event || arguments.callee.caller.arguments[0];
+                if (e && e.keyCode == 13) { // enter 键
+                    if (myvalidform()) {
+                        window.location.href = "search.aspx?key=" + $("#searchbox").val() + "";
+                    } else {
+                        $('.btn-search').addClass('on');
+                    }
+                }
+            };
+
+        });
+        function show() {
+            alert("a");
+            $(".tabs a").first().removeClass("on");
+            $(".tabs a").last().addClass("on");
+            $(".conts .item item-3").show().siblings().hide();
+        }
+
+        function myvalidform() {
+            if ($("#searchbox").val() == "") {
+                $.Showmsg("请输入关键字！");
+                setTimeout(closeMsg, 1200);
+                return false;
+            }
+            if ($("#searchbox").val().length > 8) {
+                $.Showmsg("关键字不得超过8个字符!");
+                setTimeout(closeMsg, 1200);
+                return false;
+            }
+            return true;
+        }
+        function closeMsg() {
+            $.Hidemsg()
+        }
+
+        var allcookies = document.cookie;
+        function getCookie(cookie_name) {
+            var value = "";
+            var allcookies = document.cookie;
+            var cookie_pos = allcookies.indexOf(cookie_name);   //索引的长度
+            // 如果找到了索引，就代表cookie存在，
+            // 反之，就说明不存在。
+            if (cookie_pos != -1) {
+                // 把cookie_pos放在值的开始，只要给值加1即可。
+                cookie_pos += cookie_name.length + 1;      //这里我自己试过，容易出问题，所以请大家参考的时候自己好好研究一下。。。
+                var cookie_end = allcookies.indexOf(";", cookie_pos);
+                if (cookie_end == -1) {
+                    cookie_end = allcookies.length;
+                }
+                value = unescape(allcookies.substring(cookie_pos, cookie_end)); //这里就可以得到你想要的cookie的值了。。。
+            }
+            return value;
+        }
+    </script>
+
+    <link rel="stylesheet" href="css/index.css" />
+    <!--[if lte IE 8]>
+    <link rel="stylesheet" href="css/lte-ie8-index.css" />
+    <![endif]-->
+    <link rel="stylesheet" href="css/font-dincond.css" />
+    <script type="text/javascript" src="http://test.reenoo.net/temporaries/js/reenoo_prompt.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $("#subjects .g-wrap .item-1 .p2").css("left", "350px");
+            $("#subjects .g-wrap .item-1 .p2").css("top", "21px");
+        })
+    </script>
+
+
+
+    <style>
+        .stock .red .stock-bt { width: 17px; height: 13px; background: url(../img/relation/icon_stock_up.png) no-repeat; background-size: 100%; display: inline-block; float: left; position: absolute; bottom: 6px; }
+        .stock .green .stock-bt { width: 17px; height: 13px; background: url(../img/relation/icon_stock_down.png) no-repeat; background-size: 100%; display: inline-block; float: left; position: absolute; bottom: 6px; }
+    </style>
+
+</head>
+<body>
+<div id="header">
+    <div class="g-wrap">
+        <a id="logo" href="index.aspx"></a>
+        <ul id="nav">
+            <li class="n1"><a href="index.aspx"><span>首页</span><span class="bkg"></span></a></li>
+            <li class="n2 more"><a href="about.aspx"><span>万科集团</span><span class="bkg"></span></a></li>
+            <li class="n3 more"><a href="news.aspx"><span>新闻中心</span></span><span class="bkg"></span></a></li>
+            <li class="n4 more"><a href="investors.aspx"><span>投资者关系</span><span class="bkg"></span></a></li>
+            <li class="n5 more"><a href="service.aspx"><span>产品服务</span><span class="bkg"></span></a></li>
+            <li class="n6 more"><a href="citizenship.aspx"><span>企业公民</span><span class="bkg"></span></a></li>
+            <li class="n7"><a href="http://rc.vanke.com/" target="_blank"><span>加入万科</span><span class="bkg"></span></a></li>
+            <li class="n8"><a href="feedback.aspx"><span>投诉建议</span></span><span class="bkg"></span></a></li>
+        </ul>
+        <div id="shop">
+            <a class="header-nwbtn" href="javascript:void(0)">万科网群</a>
+            <a class="btn-lang tmp-unselect" href="javascript:void(0);">中/EN</a>
+            <a href="javascript:void(0);" class="btn-search"></a>
+        </div>
+    </div>
+</div>
+
+<div id="content">
+
+    <div id="subNav">
+        <div class="g-wrap">
+            <div class="item about">
+                <a href="about.aspx?type=3">集团介绍<span></a><a href="about.aspx?type=5">团队介绍<span></a><a href="about.aspx?type=6">大事记<span></a>
+            </div>
+            <div class="item news">
+                <a href="news.aspx?type=8">集团新闻<span></a><a href="news.aspx?type=9">地方动态 <span></a><a href="news.aspx?type=31">媒体报道<span></a>
+            </div>
+            <div class="item relation">
+                <a href="investors.aspx?type=12">最新公告<span></a><a href="investors.aspx?type=13">财务信息<span></a><a target="_blank" href="http://ir.vanke.com/investor/register/default.aspx">投资者来访<span></span></a><a href="investors.aspx?type=15">公司治理<span></a><a target="_blank" href="http&#58;&#47;&#47;www.vanke.com&#47;invest-main.html">投资者教育基地<span></span></a>
+            </div>
+            <div class="item service">
+                <a href="service.aspx?type=24">万科地产<span></a><a href="service.aspx?type=25">万科物业<span></a><a target="_blank" href="http://www.scpgroup.com/">印力集团<span></span></a>
+            </div>
+            <div class="item citizenship">
+                <a href="citizenship.aspx?type=18">社会责任报告<span></a><a href="citizenship.aspx?type=23">志愿者活动<span></a><a target="_blank" href="http://www.vankefoundation.org/">万科公益基金会<span></span></a>
+            </div>
+            <div class="item search">
+                <input id='searchbox' type="text" placeholder="请输入关键词" />
+            </div>
+            <div id="language-box" class="item langs">
+                <a id="on" href="../">中文简体</a>
+                <a href="/big5">中文繁体</a>
+                <a href="/en">EN</a>
+            </div>
+            <div class="item nwmenu">
+                <div class="nwmenu-inner">
+                    <div class="nwi-box clearfix">    <ul class="nwmenu-list">        <li><a href="http://www.scpgroup.com/" target="_blank">印力集团</a></li>        <li><a href="http://www.inboyu.com/" target="_blank">泊寓</a></li>        <li><a href="http://life.vanke.com/" target="_blank">万科在线家</a></li>        <li><a href="http://www.vanlian.cn/" target="_blank">北京万科链家装饰</a></li>        <li><a href="http&#58;&#47;&#47;vma.vanke.com" target="_blank">深圳万科梅沙书院</a></li>        <li><a href="http&#58;&#47;&#47;www.vkbs.cn&#47;en&#47;" target="_blank">上海万科双语学校</a></li>        <li><a href="http://www.lakesonghua.com/" target="_blank">万科松花湖度假区</a></li>        <li><a href="http&#58;&#47;&#47;www.naradalz.com&#47;" target="_blank">杭州良渚君澜度假酒店</a></li>        <li><a href="http&#58;&#47;&#47;pdc.vanke.com&#47;" target="_blank">万科招标采购</a></li>        <li><a href="http://liangzhu.vanke.com/" target="_blank">杭州良渚文化村</a></li>        <li><a href="http://www.gzvankecare.com" target="_blank">万颐养老在华南</a></li>        <li><a href="http://www.gzvankehotel.com" target="_blank">花园里的鱼度假村</a></li>    </ul></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $(function () {
+            var arr = new Array("zh-CN", "zh-Hant", 'en');
+            $("#language-box a").each(function (index) {
+                $(this).click(function () {
+                    setCookieLanguage('Language', arr[index]);
+                });
+            });
+        })
+        function setCookieLanguage(name, value) {
+            var argv = setCookieLanguage.arguments;
+            var argc = setCookieLanguage.arguments.length;
+            var expires = (argc > 2) ? argv[2] : null;
+            if (expires != null) {
+                var LargeExpDate = new Date();
+                LargeExpDate.setTime(LargeExpDate.getTime() + (expires * 1000 * 3600 * 24));
+            }
+            document.cookie = name + "=" + escape(value) + ((expires == null) ? "" : ("; expires=" + LargeExpDate.toGMTString())) + ("; path=/") + ("; domain=.vanke.com");
+        }
+    </script>
+
+    <div id="banner">
+        <ul class="pics">
+            <li class="b1" style="background-image: url(/upload/img/2017-10-27/6d20b314-c6be-43cb-83eb-1a54917f83a1.png);"><a target="_blank" href="http://www.vanke.com/news.aspx?type=8&id=5305"></a></li><li class="b2" style="background-image: url(/upload/img/2017-07-20/a71feb39-8607-49ea-a080-222cbc738c34.jpg);"><a ></a></li><li class="b3" style="background-image: url(/upload/img/2017-03-28/728cb515-6587-4236-bae2-f57c2d4cc468.jpg);"><a href="citizenship.aspx?type=18&id=4719"></a></li><li class="b4" style="background-image: url(/upload/img/2017-01-13/537de1cc-1927-4215-ae94-b647dc9297fe.jpg);"><a target="_blank" href="http://life.vanke.com/"></a></li><li class="b5" style="background-image: url(/upload/img/2017-01-13/0219c284-cf99-47ec-a400-48bbbe504951.jpg);"><a ></a></li>
+        </ul>
+        <div class="btns">
+            <a class="prev" href="javascript:void(0);"><span class="off"></span><span class="on"></span></a>
+            <a class="next" href="javascript:void(0);"><span class="off"></span><span class="on"></span></a>
+        </div>
+        <div class="g-wrap">
+            <ul class="idxs">
+                <li></li><li></li><li></li><li></li><li></li>
+            </ul>
+        </div>
+    </div>
+
+
+
+
+    <!-- 新闻滚动  新版本  8-18(hyq) start -->
+
+    <div class="redian">
+        <div class="r-wrap">
+
+            <div class="caifu">
+                <a href="news.aspx?type=8&id=5307">
+                    <h1>雄安万科建筑研究中心揭牌 打造国际性绿色开放平台 ｜发布</h1>
+                    <p>10月28日下午，万科集团与住建部科技与产业化发展中心签订了《全面推进城乡建设领域绿色发展研究及推广合作框架协议》，与环保部环境发展中心、中国节能环境保护公司（以下简称“中国节能”）签订了《关于合作推进环保部技术评估与转...</p>
+                </a>
+
+            </div>
+
+
+            <div class="news-1">
+                <ul class="tab-nav tab1">
+                    <li>集团新闻</li>
+                    <li>地方动态 </li>
+                    <li>媒体报道</li>
+
+                </ul>
+
+                <div class="xian"></div>
+
+                <div class="tab-box">
+                    <a href="news.aspx?type=8&id=5307">
+                        <p><i>2017.10.29 </i>雄安万科建筑研究中心揭牌 打造国际性绿色开... </p>
+                    </a>
+                    <a href="news.aspx?type=8&id=5305">
+                        <p><i>2017.10.27 </i>万科发布2017年第三季度报告： 前三季销... </p>
+                    </a>
+                    <a href="news.aspx?type=8&id=5291">
+                        <p><i>2017.10.13 </i>万科与深圳市人才安居集团合作 共圆人才“安... </p>
+                    </a>
+
+                </div>
+                <div class="tab-box none">
+                    <a href="news.aspx?type=9&id=5283">
+                        <p><i>2017.10.12 </i>万科杭州与网易严选战略合作，联手演绎线上线... </p>
+                    </a>
+                    <a href="news.aspx?type=9&id=5286">
+                        <p><i>2017.09.29 </i>上步玉田试水综合整治新模式 万科实践引领城... </p>
+                    </a>
+                    <a href="news.aspx?type=9&id=5224">
+                        <p><i>2017.08.03 </i>万科教育｜浙江艺术教育再出创新，万科琨山艺... </p>
+                    </a>
+
+                </div>
+                <div class="tab-box none">
+                    <a href="news.aspx?type=31&id=5294">
+                        <p><i>2017.10.21 </i>万科与华人文化合作，城市配套服务商战略深化 </p>
+                    </a>
+                    <a href="news.aspx?type=31&id=5285">
+                        <p><i>2017.10.12 </i>万科与四家公司60亿成立物流地产基金 </p>
+                    </a>
+                    <a href="news.aspx?type=31&id=5284">
+                        <p><i>2017.10.11 </i>万科拿到稀缺的雄安入场券 哪些企业有资格落... </p>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="stock">
+                <h1>万科A000002</h1>
+                <div class="stock-num red">
+                    <h2 id="stockValue"></h2>
+                    <em class="stock-bt"></em>
+                    <h3>RMB</h3>
+
+                </div>
+
+                <p id="stockMsg"></p>
+
+            </div>
+
+
+
+        </div>
+    </div>
+
+
+
+
+    <script type="text/javascript" src="http://hq.sinajs.cn/list=sz000002,s_sz000002"></script>
+    <script type="text/javascript" src="http://hq.sinajs.cn/list=hk02202"></script>
+    <script type="text/javascript">
+        $(function () {
+            var totalcapital = 11046108081;
+            var arr_stock = hq_str_sz000002.split(',');
+            var arr_stock_s = hq_str_s_sz000002.split(',');
+
+            $('#stockValue').text(arr_stock_s[1]);
+            if (arr_stock_s[2].indexOf("-") >= 0) {//表示下跌
+                if ($('.stock .stock-num').hasClass('red')) {
+                    $('.stock .stock-num').removeClass('red').addClass('green');
+                }
+
+                $('.r-wrap .stock .stock-num h2').css('color', 'green');
+                $('.r-wrap .stock .stock-num h3').css('color', 'green');
+            }
+            var shenming = '截至 ' + arr_stock[30] + " " + arr_stock[31] + '';
+            $("#stockMsg").html(shenming);
+
+
+        })
+
+
+
+
+    </script>
+
+
+
+
+    <script>
+        //新闻选项卡
+        $(document).ready(function () {
+            function tab(i) {
+                $(i).children().click(function () {  //触发方式//click//mouseover
+                    $(this).siblings().removeClass();
+                    $(this).addClass('hover');
+                    $(this).parent().siblings('.tab-box').hide();
+                    $(this).parent().siblings('.tab-box').eq($(this).index()).show();
+
+
+                    if ($(this).index() == 0)
+
+                    { $('.xian').animate({ left: '0px' }); }
+                    else if ($(this).index() == 1) {
+
+
+                        { $('.xian').animate({ left: '80px' }); }
+
+                    }
+                    else if ($(this).index() == 2) {
+
+
+                        { $('.xian').animate({ left: '160px' }); }
+
+                    }
+
+                    else if ($(this).index() == 3) {
+
+                        { $('.xian').animate({ left: '240px' }); }
+
+                    }
+
+
+                })
+            }
+
+            //tab调用
+            $(function () {
+                tab('.tab1')
+                tab('.tab2')
+            })
+
+            $(function () {
+                $(".nav").click(function () {
+                    $(this).toggleClass("color").siblings().removeClass("color")//颜色
+                    $(this).next().slideToggle(500).siblings("ul").slideUp(500);
+                })
+            })
+        });
+    </script>
+
+
+
+
+    <!-- 新闻滚动  新版本  8-18(hyq) end -->
+
+
+    <div id="subjects">
+        <div class="g-wrap ready trans">
+            <a class="item-1" target="_blank" href="http://www.vanke.com/upload/file/2016-07-22/03613d09-aa45-4ded-98c3-d60f550da1d8.pdf"><span class="p1"><img src="/upload/img/2016-07-28/c58a160d-8092-47b3-83e4-fa8d37b16bb2.jpg" alt="" /></span><span class="p2"></span></a><a class="item-2" target="_blank" href="http&#58;&#47;&#47;www.runforfun.com&#47;"><span class="p1"><img src="/upload/img/2015-04-29/d94d2c0d-3a38-45c9-bf2f-f6804e12a49c.jpg" alt="" /></span><span class="p2"><img src="/upload/img/2015-04-30/6ead2c8e-f430-4407-b7ac-63208aca4d7a.jpg" alt="" /></span></a><a class="item-3" target="_blank" href="http://life.vanke.com"><span class="p1"><img src="/upload/img/2016-09-22/ae7ac24a-7c8c-4def-9579-7825ce4b4250.jpg" alt="" /></span><span class="p2"><img src="/upload/img/2016-09-22/9a19119d-ce86-4734-ac21-eeccbe9a587d.jpg" alt="" /></span></a><a class="item-4" target="_blank" href="http&#58;&#47;&#47;www.vankeweekly.com&#47;"><span class="p1"><img src="/upload/img/2015-04-29/02b0c63d-4b68-4eba-9359-8bdaada83524.jpg" alt="" /></span><span class="p2"><img src="/upload/img/2015-06-09/1dd49f8c-9a50-4381-8091-544109091213.jpg" alt="" /></span></a>
+        </div>
+    </div>
+</div>
+
+<div id="mask">
+    <div id="legal" class="wrap">
+        <p>
+            <span class="tit">版权声明</span>
+            <br />
+            <br />
+            本网站(www.vanke.com)上为版权人所有的文件，在此并未作任何授权。本网站上的文件仅限于为信息和非商业或个人之目的使用，并且不得在任何网络计算机上复制或公布，也不得在任何媒体上传播。
+            <br />
+            未经版权人许可，任何人不得擅自(包括但不限于：以非法的方式复制、传播、展示、镜像、上载、下载)使用。否则版权人将依法追究其法律责任。
+            <br />
+            <br />
+            <span>免责声明</span>
+            <br />
+            <br />
+            版权人拥有对本网站的内容进行随时更改之权利，是前将不会另行通知。版权人不保证或声明本网站展示的资料是否正确、全面或是最新数据。
+            <br />
+            <br />
+            本网站内的所有图片(包括但不限于插图、透视图、设计图等)、模型、文字描述等，仅作为参考信息，非开发商的任何承诺或要约。
+            <br />
+            <br />
+            <span>开发商声明</span>
+            <br />
+            <br />
+            网站有关其开发项目信息的介绍，均以政府最后审批文件为准。商品房买卖双方之间的关系以当事人签订的买卖双方之间的关系以当事人签订买卖合同为准。
+            <br />
+            <br />
+            任何人因本网站或依赖其内容进行交易所引致的损失，版权人和开发商均不承担任何责任。
+        </p>
+    </div>
+    <div id="sitemap" class="wrap">
+        <p>
+            <span class="tit">网站地图</span>
+            <br />
+            <br />
+            <a href="index.aspx">首页</a>
+            <br />
+            <br />
+            <span class="column">万科集团</span>
+            <a href="about.aspx?type=3">集团介绍</a> | <a href="about.aspx?type=5">领导团队</a>
+            <br />
+            <br />
+            <span class="column">新闻</span>
+            <a href="news.aspx?type=8">集团新闻</a> | <a href="news.aspx?type=9">地方动态</a> | <a href="news.aspx?type=10">专题杂志</a>
+            <br />
+            <br />
+            <span class="column">投资者关系</span>
+            <a href="investors.aspx?type=12">最新公告</a> | <a href="investors.aspx?type=13">财务信息</a> | <a href="http://www.vanke.com/investor/register/default.aspx" target="_blank">投资者来访</a> | <a href="investors.aspx?type=15">公司治理</a> | <a target="_blank" href="http://vanke.com/invest-main.html">投资者教育基地</a>
+            <br />
+            <br />
+            <span class="column">产品服务</span>
+            <a href="service.aspx?type=24">万科地产</a> | <a href="service.aspx?type=25">万科物业</a>
+
+            <br />
+            <br />
+            <span class="column">企业公民</span>
+            <a href="citizenship.aspx?type=18">社会责任报告</a> | <a href="citizenship.aspx?type=23">志愿者活动</a> | <a target="_blank" href="http://www.vankefoundation.org/">万科公益基金会</a>
+            <br />
+            <br />
+            <a href="http://rc.vanke.com/" target="_blank">加入万科</a>
+            <br />
+            <br />
+            <a href="feedback.aspx">投诉建议</a>
+            <br />
+            <br />
+            <a href="http://5198.vanke.com/" target="_blank">廉政举报</a>
+            <br />
+            <br />
+            <a href="contact.aspx">联络万科</a>
+            <br />
+            <br />
+            <span style="color: white; font-weight: bold;">万科官网设计开发及维护服务公司</span>
+            <a class="reenoo" style="color: white;" href="http://www.reenoo.com" target="_blank">锐诺互动(深圳)</a>
+        </p>
+    </div>
+</div>
+<div id="footer">
+    <div id="reference">
+        <div class="g-wrap">
+            <div class="left">
+                <p>您来访的目的是了解：</p>
+                <a class="a1" href="about.aspx?type=24">万科地产</a>
+                <a class="a2" href="about.aspx?type=25">万科物业 </a>
+                <a class="a3" href="http://life.vanke.com/" target="_blank">万科在线家</a>
+            </div>
+            <div class="right">
+                <a target="_blank" href="http://5198.vanke.com/">廉政举报</a>&nbsp;&nbsp;/&nbsp;&nbsp;<a target="_blank" href="wjcx/default.aspx">违纪查询</a>&nbsp;&nbsp;/&nbsp;&nbsp;<a href="contact.aspx">联络万科</a>&nbsp;&nbsp;/&nbsp;&nbsp;<a href="about.aspx?type=4">关注万科</a>
+            </div>
+        </div>
+    </div>
+    <div id="copyright">
+        <div class="g-wrap">
+            <div>
+                万科企业股份有限公司&nbsp;版权所有&nbsp;&nbsp;&nbsp<a class="legal" href="javascript:void(0);">法律声明</a><div id="ebsgovicon-box" style="width: 50px; margin-top: -20px; border-left: none">
+                <script id="ebsgovicon" src="http://szcert.ebs.org.cn/govicon.js?id=dd57798b-8253-4419-a936-b33938fe068c&width=44&height=44&type=1" type="text/javascript" charset="utf-8"></script>
+            </div>
+                <br />
+                <a target="_blank" href="http://www.miitbeian.gov.cn">粤ICP备05098314</a><a style="margin-left: 14px;" class="sitemap" href="javascript:void(0);">网站支持</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div style="display: none">
+    <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://"); document.write(unescape("%3Cspan id='cnzz_stat_icon_1254929906'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s11.cnzz.com/stat.php%3Fid%3D1254929906' type='text/javascript'%3E%3C/script%3E"));</script>
+</div>
+</body>
+</html>
+<link href="css/validform/style.css" rel="stylesheet" />
+<script src="js/validform/Validform_v5.3.2_min.js" type="text/javascript"></script>
+<script src="js/backTop.js"></script>
+<script type="text/javascript">
+    $(function () {
+        $("#ebsgovicon-box a img").attr("src", "img/gswj.jpg");
+    })
+</script>
